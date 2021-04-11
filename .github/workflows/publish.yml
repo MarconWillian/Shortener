@@ -41,7 +41,7 @@ jobs:
       with:
         file: package.json
         field: name
-        value: '@marconwillian/fixemail'
+        value: '@marconwillian/shortener-link'
     - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
