@@ -1,6 +1,6 @@
 {
   "name": "shortener-link",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Shortener of links",
   "main": "dist/index.js",
   "scripts": {
