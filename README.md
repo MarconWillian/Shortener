@@ -18,29 +18,33 @@ You short a link with ouo.io.
 You can use:
 
 ```javascript
-const fixEmail = require('fixemail');
+const ouoIo = require('shortener-link/ouoIo');
 
-fixEmail('email@gmail.com')
-// > { email: 'email@gmail.com', valid: true }
+const link = 'https://7-up.net/embed-ih21389uah9a.html';
 
-fixEmail('emai l@gmail .com')
-// > { email: 'email@gmail.com', valid: true }
+const ouoShort = ouoIo({ apiKey: 'TYvpHJGW' });
 
-fixEmail('emai lgmail .com')
-// > { email: 'emailgmail.com', valid: false }
+const shortenedMask = ouoShort.mask(link);
+// > { valid: true, link: "https://ouo.io/qs/TYvpHJGW?s=https://7-up.net/embed-ih21389uah9a.html" }
 
+ouoShort.short(link)
+  .then(shortened => {
+
+    console.log(shortened)
+    // > { valid: true, link: "https://ouo.io/UcPf3IH" }
+  })
 ```
 
 ```typescript
-import fixEmail from 'fixemail';
+import ouoIo from 'shortener-link/ouoIo';
 
-fixEmail('email@gmail.com')
-// > { email: 'email@gmail.com', valid: true }
+const link = 'https://7-up.net/embed-ih21389uah9a.html';
 
-fixEmail('emai l@gmail .com')
-// > { email: 'email@gmail.com', valid: true }
+const ouoShort = ouoIo({ apiKey: 'TYvpHJGW' });
 
-fixEmail('emai lgmail .com')
-// > { email: 'emailgmail.com', valid: false }
+const shortenedMask = ouoShort.mask(link);
+// > { valid: true, link: "https://ouo.io/qs/TYvpHJGW?s=https://7-up.net/embed-ih21389uah9a.html" }
 
+const shortened = ouoShort.short(link);
+// > Promise<{ valid: true, link: "https://ouo.io/UcPf3IH" }>
 ```
