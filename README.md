@@ -1,19 +1,19 @@
-# FixEmail
+# Shortener
 
 ## Install
 
-You can install with [npm](https://www.npmjs.com/package/fixemail):
+You can install with [npm](https://www.npmjs.com/package/shortener-link):
 ```bash
-  npm install fixemail
+  npm install shortener-link
 ```
 
-You can install with [yarn](https://yarnpkg.com/package/fixemail):
+You can install with [yarn](https://yarnpkg.com/package/shortener-link):
 ```bash
-  yarn add fixemail
+  yarn add shortener-link
 ```
 
-## FixEmail Syntax
-You can fix error in email syntax by user.
+## ouo.io Syntax
+You short a link with ouo.io.
 
 You can use:
 
@@ -42,35 +42,5 @@ fixEmail('emai l@gmail .com')
 
 fixEmail('emai lgmail .com')
 // > { email: 'emailgmail.com', valid: false }
-
-```
-
-
-## Validate Email
-You can validate your email with this package.
-
-Used package [email-validator](https://www.npmjs.com/package/email-validator)
-
-You can use:
-
-```javascript
-const { validate } = require('fixemail');
-
-validate('email@gmail.com')
-// > true
-
-validate('emai l@gmail .com')
-// > false
-
-```
-
-```typescript
-import { validate } from 'fixemail';
-
-validate('email@gmail.com')
-// > true
-
-validate('emai l@gmail .com')
-// > false
 
 ```

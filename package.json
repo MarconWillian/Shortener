@@ -1,6 +1,6 @@
 {
   "name": "shortener-link",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shortener of links",
   "main": "dist/index.js",
   "scripts": {
@@ -35,7 +35,8 @@
   "keywords": [
     "shortener",
     "ouo.io",
-    "ouo"
+    "ouo",
+    "stfly.me"
   ],
   "dependencies": {
     "axios": "^0.21.1"
