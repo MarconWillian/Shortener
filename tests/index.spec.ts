@@ -9,7 +9,7 @@ describe('OUO.io Shortener', () => {
     const shortened = ouoShort.mask(link);
 
     expect(shortened.valid).toEqual(true);
-    expect(shortened.link).toEqual(
+    expect(shortened.linkShorted).toEqual(
       'https://ouo.io/qs/keyTest?s=https://7-up.net/embed-ih21389uah9a.html'
     );
   });

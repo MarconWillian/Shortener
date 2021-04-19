@@ -25,13 +25,13 @@ const link = 'https://7-up.net/embed-ih21389uah9a.html';
 const ouoShort = ouoIo({ apiKey: 'TYvpHJGW' });
 
 const shortenedMask = ouoShort.mask(link);
-// > { valid: true, link: "https://ouo.io/qs/TYvpHJGW?s=https://7-up.net/embed-ih21389uah9a.html" }
+// > { valid: true, linkShorted: "https://ouo.io/qs/TYvpHJGW?s=https://7-up.net/embed-ih21389uah9a.html" }
 
 ouoShort.short(link)
   .then(shortened => {
 
     console.log(shortened)
-    // > { valid: true, link: "https://ouo.io/UcPf3IH" }
+    // > { valid: true, linkShorted: "https://ouo.io/UcPf3IH" }
   })
 ```
 
@@ -43,8 +43,8 @@ const link = 'https://7-up.net/embed-ih21389uah9a.html';
 const ouoShort = ouoIo({ apiKey: 'TYvpHJGW' });
 
 const shortenedMask = ouoShort.mask(link);
-// > { valid: true, link: "https://ouo.io/qs/TYvpHJGW?s=https://7-up.net/embed-ih21389uah9a.html" }
+// > { valid: true, linkShorted: "https://ouo.io/qs/TYvpHJGW?s=https://7-up.net/embed-ih21389uah9a.html" }
 
 const shortened = ouoShort.short(link);
-// > Promise<{ valid: true, link: "https://ouo.io/UcPf3IH" }>
+// > Promise<{ valid: true, linkShorted: "https://ouo.io/UcPf3IH" }>
 ```
