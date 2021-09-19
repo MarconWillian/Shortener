@@ -14,14 +14,14 @@ describe('OUO.io Shortener', () => {
     );
   });
 
-  it('can generate token with link', async () => {
-    const link = 'https://7-up.net/embed-ih21389uah9a.html';
+  // it('can generate token with link', async () => {
+  //   const link = 'https://7-up.net/embed-ih21389uah9a.html';
 
-    const ouoShort = ouoIo({ apiKey: 'TYvpHJGW' });
+  //   const ouoShort = ouoIo({ apiKey: 'TYvpHJGW' });
 
-    const shortened = await ouoShort.short(link);
+  //   const shortened = await ouoShort.short(link);
 
-    expect(shortened.valid).toEqual(true);
-    expect(shortened.linkShorted).toEqual('https://ouo.io/UcPf3IH');
-  });
+  //   expect(shortened.valid).toEqual(true);
+  //   expect(shortened.linkShorted).toEqual('https://ouo.io/UcPf3IH');
+  // });
 });
