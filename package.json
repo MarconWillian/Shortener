@@ -1,6 +1,6 @@
 {
   "name": "shortener-link",
-  "version": "0.0.4",
+  "version": "0.6.0",
   "description": "Shortener of links",
   "main": "dist/index.js",
   "scripts": {
@@ -36,7 +36,11 @@
     "shortener",
     "ouo.io",
     "ouo",
-    "stfly.me"
+    "stfly.me",
+    "shrtfly.com",
+    "shrinkearn.com",
+    "clk.sh",
+    "fc.lc"
   ],
   "dependencies": {
     "axios": "^0.21.1"
