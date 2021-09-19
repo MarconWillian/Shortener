@@ -31,13 +31,33 @@ export default ({
   baseUrls,
   maskBase64 = false
 }: ModelOneInput): ModelOneResponse => {
+  const generateURI = ({
+    api,
+    link,
+    token
+  }: {
+    api: string;
+    link: string;
+    token: string;
+  }): string => {
+    return api.replace(/{{([a-z_]+?)}}/gi, word => {
+      if (word === '{{TOKEN}}') {
+        return token;
+      }
+      if (word === '{{LINK}}') {
+        return link;
+      }
+      return word;
+    });
+  };
+
   return ({ apiKey }: SimpleConfigs): Shortener => {
     const key = apiKey;
 
     return {
       async short(link) {
         const { data: linkShorted } = await axios.get(
-          `${baseUrls.short}/${key}?s=${link}`
+          generateURI({ api: baseUrls.short, token: key, link })
         );
 
         return {
@@ -51,7 +71,7 @@ export default ({
         }
 
         return {
-          linkShorted: `${baseUrls.mask}/${key}?s=${link}`,
+          linkShorted: generateURI({ api: baseUrls.mask, token: key, link }),
           valid: true
         };
       }

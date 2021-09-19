@@ -48,3 +48,11 @@ const shortenedMask = ouoShort.mask(link);
 const shortened = ouoShort.short(link);
 // > Promise<{ valid: true, linkShorted: "https://ouo.io/UcPf3IH" }>
 ```
+
+## With Support to:
+- ouo.io
+- stfly.me
+- shrtfly.com
+- shrinkearn.com
+- clk.sh
+- fc.lc
