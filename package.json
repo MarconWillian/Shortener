@@ -1,6 +1,6 @@
 {
   "name": "shortener-link",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Shortener of links ouo.io, stfly.me, shrtfly.com, shrinkearn.com, clk.sh e more",
   "main": "dist/index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marconwillian/Shortener.git"
+    "url": "https://github.com/themarkwill/Shortener.git"
   },
   "author": "Marcon Willian <marconwillian@protonmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marconwillian/Shortener/issues"
+    "url": "https://github.com/themarkwill/Shortener/issues"
   },
-  "homepage": "https://github.com/marconwillian/Shortener#readme",
+  "homepage": "https://github.com/themarkwill/Shortener#readme",
   "devDependencies": {
     "@types/jest": "^26.0.10",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
