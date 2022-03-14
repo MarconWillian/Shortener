@@ -1,13 +1,14 @@
-# Shortener
+![Shortener][shortener-link-logo]
+# 🔗 Shortener
 
 ## Install
 
-You can install with [npm](https://www.npmjs.com/package/shortener-link):
+You can install with [npm][shortener-link-npm]:
 ```bash
   npm install shortener-link
 ```
 
-You can install with [yarn](https://yarnpkg.com/package/shortener-link):
+You can install with [yarn][shortener-link-yarn]:
 ```bash
   yarn add shortener-link
 ```
@@ -56,3 +57,9 @@ const shortened = ouoShort.short(link);
 - shrinkearn.com
 - clk.sh
 - fc.lc
+
+<!-- Markdown link & img's -->
+[license-link]: /LICENSE
+[shortener-link-logo]: https://i.imgur.com/5Fi7pI9.png
+[shortener-link-npm]: https://www.npmjs.com/package/shortener-link
+[shortener-link-yarn]: https://yarnpkg.com/package/shortener-link
