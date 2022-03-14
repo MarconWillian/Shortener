@@ -1,6 +1,6 @@
 {
   "name": "shortener-link",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Shortener of links ouo.io, stfly.me, shrtfly.com, shrinkearn.com, clk.sh e more",
   "main": "dist/index.js",
   "scripts": {
